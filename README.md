@@ -22,15 +22,24 @@ A GUI application for converting RDF and RML files into CSV format.
 
 - [Usage](#Usage)
 
+
+
 - [License](#License)
 
 
 
 ### I. Description
 
-> This project provides a graphical user interface (GUI) tool for converting RDF (Resource Description Framework) and RML (RDF Mapping Language) files into CSV  format. The application simplifies the process of transforming complex semantic data into a more accessible and widely-used format for data analysis.
+This project provides a graphical user interface (GUI) tool for converting RDF (Resource Description Framework) and RML (RDF Mapping Language) files into CSV format. The application simplifies the process of transforming complex semantic data into a more accessible and widely-used format for data analysis.
 
->The tool is built using PyQt5 for the GUI and leverages the rdflib library for handling RDF data and pandas for CSV operations. It supports file browsing, conversion status display, and error handling to ensure a smooth user experience.
+> RDF data, typically stored as subject-predicate-object triples, is flexible but not naturally structured like relational data. This poses difficulties when integrating it with tools that expect tabular data for data analysis and visualisation. This tool addresses the challenge of converting RDF data into a tabular format, making it easier to work with in data analysis tools.
+
+*Important Requirements*
+
+- RDF files must be in .nq format.
+- RML files must be in .ttl format.
+
+The tool is built using PyQt5 for the GUI and leverages the rdflib library for handling RDF data and pandas for CSV operations. It supports file browsing, conversion status display, and error handling to ensure a smooth user experience.
 
 ### II. Features
 
@@ -68,19 +77,26 @@ pip install -r requirements.txt
     ```
 2. *[Select Files](#Select_Files)*:
 Click on the Browse buttons to select your RDF (.nq) and RML (.ttl) files.
-You can also manually enter the file paths in the input fields.
+<img width="617" alt="1  select files" src="https://github.com/user-attachments/assets/4432ebe9-f6f1-4409-b5bb-86aed9192727" />
+
 
 3. *[Convert to CSV](#Convert_to_CSV)*:
 Click the Convert to CSV button to start the conversion process.
 The application will display a status message indicating the success or failure of the conversion.
 
+<img width="614" alt="2b  Status display- error" src="https://github.com/user-attachments/assets/64d5bd13-8e65-4cec-849d-84c18c54a753" />
+
+<img width="622" alt="2 Status display-Sucess" src="https://github.com/user-attachments/assets/4dfef0bc-efd6-45e4-acf0-435a03fbd094" />
+
+<img width="622" alt="2a  Status Display-error" src="https://github.com/user-attachments/assets/35b79a2d-38fc-4f39-a1a1-48894ae0db81" />
+
+
 4. *[View Output](#View_Output)*:
 Upon successful conversion, a hyperlink to the generated output.csv file will be displayed. Click on the link to open the file.
 
+<img width="385" alt="CSV file" src="https://github.com/user-attachments/assets/042f3484-d2b8-4154-9ee0-9788df9d0258" />
 
-
-
-
+           
 
 ### VI. License
 
