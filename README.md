@@ -6,7 +6,8 @@
 
 ### RDF to CSV Converter 
 
-A GUI application for converting RDF and RML files into CSV format.
+An application is designed to process and transform RDF (Resource Description Framework) and RML (RDF Mapping Language) files into CSV format.
+
 
 ---
 
@@ -30,9 +31,12 @@ A GUI application for converting RDF and RML files into CSV format.
 
 ### I. Description
 
-This project provides a graphical user interface (GUI) tool for converting RDF (Resource Description Framework) and RML (RDF Mapping Language) files into CSV format. The application simplifies the process of transforming complex semantic data into a more accessible and widely-used format for data analysis.
 
-> RDF data, typically stored as subject-predicate-object triples, is flexible but not naturally structured like relational data. This poses difficulties when integrating it with tools that expect tabular data for data analysis and visualisation. This tool addresses the challenge of converting RDF data into a tabular format, making it easier to work with in data analysis tools.
+This project provides a tool to convert RDF and RML files into CSV format, simplifying the process of transforming semantic data into a widely-used format for data analysis and visualization.
+
+>Semantic data, such as RDF and RML, contains meaningful information and relationships but is not organized in a tabular format. This makes it challenging to use with tools like spreadsheets or data analysis software. This tool overcomes these challenges by converting semantic data into a CSV format, enabling easier access and seamless integration with data analysis tools.
+
+
 
 *Important Requirements*
 
@@ -43,15 +47,15 @@ The tool is built using PyQt5 for the GUI and leverages the rdflib library for h
 
 ### II. Features
 
-  File Browsing: Easily select RDF (.nq) and RML (.ttl) files through a file dialog.
+  *File Browsing:* Easily select RDF (.nq) and RML (.ttl) files through a file dialog.
 
-  Conversion Process: Converts selected RDF and RML files into a CSV file.
+  *Conversion Process:* Converts selected RDF and RML files into a CSV file.
 
-  Status Display: Shows the status of the conversion process, including success messages and error notifications.
+  *Status Display:* Shows the status of the conversion process, including success messages and error notifications.
 
-  Error Handling: Provides informative error messages for invalid file formats, missing files, and conversion issues.
+  *Error Handling:* Provides informative error messages for invalid file formats, missing files, and conversion issues.
 
-  GUI Interface: User-friendly interface designed for simplicity and ease of use.
+  *GUI Interface:* User-friendly interface designed for simplicity and ease of use.
 
 
 ### III. Prerequisites
