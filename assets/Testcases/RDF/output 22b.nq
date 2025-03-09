@@ -1,0 +1,4 @@
+
+<http://example.com/Age> <http://example.com/Details> "43"^^<http://www.w3.org/2001/XMLSchema#int> .
+<http://example.com/Name> <http://example.com/Details> "Venus"^^<http://www.w3.org/2001/XMLSchema#string> .
+<http://example.com/DoB> <http://example.com/Details> "1981-12-30"^^<http://www.w3.org/2001/XMLSchema#date> .
