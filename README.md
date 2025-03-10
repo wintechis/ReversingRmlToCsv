@@ -67,7 +67,7 @@ Before using the RDF to CSV Converter, ensure you have the following installed:
 - rdflib for RDF data processing
 - pandas for CSV operations
 
-### IV Installation
+### IV. Installation
 
 Install the dependencies if you haven't already:
 ```bash
